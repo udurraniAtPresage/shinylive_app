@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="./shinylive/shinylive.css" />
   </head>
   <body>
-    <div style="height: 100vh; width: 100vw" id="root"></div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js')
-        .then((registration) => console.log('Service Worker registered'))
-        .catch((error) => console.error('Service Worker registration failed:', error));
-      }
-    </script>    
+    <div style="height: 100vh; width: 100vw" id="root"></div>   
   </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => console.log('Service Worker registered'))
+      .catch((error) => console.error('Service Worker registration failed:', error));
+    }
+  </script> 
 </html>
