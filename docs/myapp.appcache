@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# Version 1.0
+
+CACHE:
+index.html
+shinylive/
+edit/
+shinylive-sw.js
+app.json
+
+NETWORK:
+*

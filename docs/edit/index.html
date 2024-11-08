@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="myapp.appcache">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,12 +30,5 @@
   </head>
   <body>
     <div style="height: 100vh; width: 100vw" id="root"></div> 
-  </body>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-      .then((registration) => console.log('Service Worker registered'))
-      .catch((error) => console.error('Service Worker registration failed:', error));
-    }
-  </script>   
+  </body>  
 </html>
